@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-page {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../images/Desktop - 6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+.main-page .navbar {
+  width: 100%;
+  height: 12em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999;
+}
+
+.main-page .navbar .logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-page .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-page .navbar ul button {
+  width: 150px;
+  height: 40px;
+  border-radius: 24px;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 4px 24px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 4px 24px rgba(255, 255, 255, 0.6);
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-page .navbar ul button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.main-page .navbar ul li {
+  list-style: none;
+  position: relative;
+}
+
+.main-page .navbar ul li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.main-page .navbar ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #C80090;
+  bottom: -7px;
+  left: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.main-page .navbar ul a {
+  color: white;
+  cursor: pointer;
+}
+
+.main-page .main {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-page .main .main-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-page .main .main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+.main-page .main .main-info .main-info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50em;
+  gap: 10px;
+}
+
+.main-page .main .main-info span {
+  color: #C80090;
+}
+
+.main-page .main .main-info h1 {
+  position: relative;
+  color: white;
+  font-size: 62px;
+  padding-bottom: 15px;
+}
+
+.main-page .main .main-info h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.main-page .main .main-info p {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 200;
+}
+
+.main-page .main .main-info button {
+  width: 400px;
+  height: 70px;
+  border-radius: 23px;
+  border: none;
+  background: linear-gradient(90.15deg, #C80090 0.11%, #D76A70 99.87%);
+  -webkit-box-shadow: 0px 4px 40px rgba(196, 196, 196, 0.35);
+          box-shadow: 0px 4px 40px rgba(196, 196, 196, 0.35);
+  font-size: 31px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+.main-page .header-h1 {
+  color: white;
+  font-size: 58px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.main-page .header-h1::before {
+  content: "";
+  width: 156px;
+  height: 9px;
+  background-color: #C80090;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.main-page .header-h1::after {
+  content: attr(data-text);
+  font-size: 70px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.02vw rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 50px;
+  top: -20px;
+}
+
+.main-page .benefits {
+  width: 80%;
+  color: #fff;
+  margin: auto;
+  margin-top: 15em;
+}
+
+.main-page .benefits .benefit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10em;
+}
+
+.main-page .benefits .benefit .benefit-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.main-page .benefits .benefit .benefit-header div {
+  width: 64px;
+  height: 64px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  font-size: 45px;
+  text-align: center;
+}
+
+.main-page .benefits .benefit h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.main-page .benefits .benefit p {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+
+.main-page .benefits .benefit li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+}
+
+.main-page .benefits .right {
+  text-align: right;
+}
+
+.main-page .benefits .right .benefit-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-page .services {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  margin-top: 20rem;
+}
+
+.main-page .services .service-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-page .services .service-cards .service-card {
+  width: 400px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 70px;
+  padding: 50px;
+  -webkit-box-shadow: inset 0px -14px 15px 7px rgba(0, 0, 0, 0.24);
+          box-shadow: inset 0px -14px 15px 7px rgba(0, 0, 0, 0.24);
+}
+
+.main-page .services .service-cards .service-card h3 {
+  font-size: 24px;
+  position: relative;
+  margin: 20px 0px 20px 0px;
+}
+
+.main-page .services .service-cards .service-card h3::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  background-color: #000;
+  bottom: -10px;
+  left: 0%;
+}
+
+.main-page .services .service-cards .service-card p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-page .projects {
+  width: 80%;
+  margin: auto;
+}
+
+.main-page .projects .projects-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 160px;
+}
+
+.main-page .projects .projects-cards .project-card {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 26px;
+  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-page .projects .projects-cards .project-card button {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 15px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.06%, #D86AFF), color-stop(96.99%, #15CABF));
+  background: linear-gradient(90deg, #D86AFF 0.06%, #15CABF 96.99%);
+  color: #fff;
+  font-size: 24px;
+}
+
+.main-page .projects .projects-cards .project-card .card-name {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .projects .projects-cards .project-card .card-name h3 {
+  color: #fff;
+  font-size: 70px;
+  z-index: 10;
+}
+
+.main-page .projects .projects-cards .survey {
+  background-color: rgba(33, 81, 255, 0.7);
+}
+
+.main-page .projects .projects-cards .survey .survey-bc {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-page .projects .projects-cards .alem {
+  background: rgba(248, 186, 0, 0.92);
+}
+
+.main-page .projects .projects-cards .alem .alem-bc {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-img {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+footer .footer-img .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+footer .contacts {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 25px;
+}
+
+footer .link {
+  width: 50px;
+}
+
+footer .leadev-logo {
+  width: 200px;
+}
+/*# sourceMappingURL=index.css.map */
